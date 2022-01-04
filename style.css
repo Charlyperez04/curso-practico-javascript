@@ -25,14 +25,14 @@ section button{
     width: 80%;
     height: 30%;
     left:10%;
-    margin-top: 10%;
+    margin-top: 50px;
     border: khaki 5px solid;
 }
 .cuadrado input{
     width: 10%;
-    margin-top: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
+    margin-top: 50px;
+    margin-right: 1rem;
+    margin-bottom: 10px;
 }
 .cuadrado button{
     left: 10%;
@@ -54,13 +54,13 @@ section button{
     width: 80%;
     height: 30%;
     left:10%;
-    margin-top: 42%;
+    margin-top: 280px;
     border: khaki 5px solid;
 }
 .triangulo input{
     width: 10%;
-    margin-top:2.5%;
-    margin-right: 25.3%;
+    margin-top: 0;
+    margin-right: 600px;
 }  
 .triangulo button{
     left: 10%;
@@ -76,19 +76,22 @@ section button{
     background-color:lightgray;
     bottom: 75%;
 }
+#InputTriangulo1{
+    margin-top: 50px;
+}
 .circulo{
     position: absolute;
     width: 80%;
     height: 30%;
     left:10%;
-    margin-top: 74%;
+    margin-top: 500px;
     border: khaki 5px solid;
 }
 .circulo input{
     width: 10%;
-    margin-top: 10%;
+    margin-top: 59px;
     margin-right: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 10px;
 }
 .circulo button{
     left: 2.5%;
