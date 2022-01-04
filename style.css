@@ -14,9 +14,93 @@ section{
     margin-top: 20px;
     background-color:cornsilk;
 }
-section label{
+section{
     display: inline-block;
 }
 section button{
-    border:cyan 2px solid;
+    border:darkorange 2px solid;    
+}
+.cuadrado{
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    left:10%;
+    margin-top: 10%;
+    border: khaki 5px solid;
+}
+.cuadrado input{
+    width: 10%;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+.cuadrado button{
+    left: 10%;
+    position: relative;
+    width:80%;
+    height: 2em;
+    background-color: bisque;
+    margin-bottom: 2%;
+}
+.cuadrado div{
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    background-color:lightgray;
+    bottom: 75%;
+}
+.triangulo{
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    left:10%;
+    margin-top: 42%;
+    border: khaki 5px solid;
+}
+.triangulo input{
+    width: 10%;
+    margin-top:2.5%;
+    margin-right: 25.3%;
+}  
+.triangulo button{
+    left: 10%;
+    position: relative;
+    width:80%;
+    height: 1.6rem;
+    background-color: bisque;
+}
+.triangulo div{
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    background-color:lightgray;
+    bottom: 75%;
+}
+.circulo{
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    left:10%;
+    margin-top: 74%;
+    border: khaki 5px solid;
+}
+.circulo input{
+    width: 10%;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+.circulo button{
+    left: 2.5%;
+    position: relative;
+    width:95%;
+    height: 2rem;
+    background-color: bisque;
+}
+.circulo div{
+    width: 100%;
+    height: 28%;
+    position: absolute;
+    background-color:lightgray;
+    bottom: 72%;
 }
