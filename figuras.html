@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas | Curso Practico de JS en Platzi</title>
-    <script src="./figuras.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <script src="./figuras/figuras.js"></script>
+    <link rel="stylesheet" href="./figuras/style.css">
 </head>
 <body>
     <header>
@@ -74,6 +74,26 @@
             </button>
             <button type="button" onclick="calcularAreaCirculo()">
                 Calcular el area
+            </button>
+        </form>
+    </section>
+    <section class="trianguloIso">
+        <div><h2>Calculando la altura de un triangulo isosceles</h2></div>
+        <form action="">
+            <label for="InputLado1">
+                Escribe cuanto mide el primer lado de tu triangulo isosceles
+            </label>
+            <input id="InputLado1" type="number">
+            <label for="InputLado2">
+                Escribe cuanto mide el otro lado de tu triangulo isosceles
+            </label>
+            <input type="text" id="InputLado2">
+            <label for="InputBaseIso">
+                Escribe cuanto mide la base de tu triangulo isosceles
+            </label>
+            <input type="text" id="InputBaseIso">
+            <button type="button" onclick="calcularAlturaTrianguloIso()">
+            Calcular la altura
             </button>
         </form>
     </section>

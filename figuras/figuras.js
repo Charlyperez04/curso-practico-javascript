@@ -1,16 +1,16 @@
-//Código del cuadrado
-console.group("Cuadrados");
-function perimetroCuadrado(lado){
-    return lado*4;
-}
-perimetroCuadrado()
-function areaCuadrado(lado){
-    return lado*lado;
-}
-console.groupEnd("Cuadrados");
+    //Código del cuadrado
+    console.group("Cuadrados");
+    function perimetroCuadrado(lado){
+        return lado*4;
+    }
+    perimetroCuadrado()
+    function areaCuadrado(lado){
+        return lado*lado;
+    }
+    console.groupEnd("Cuadrados");
 
-//Código del triangulo
-console.group("Triangulos");
+    //Código del triangulo
+    console.group("Triangulos");
     function perimetroTriangulo(lado1,lado2,base){
         return lado1+lado2+base;
     }
@@ -45,6 +45,15 @@ console.group("Triangulos");
 
     console.groupEnd("Círculos");
 
+    //Añadimos función de altura del triangulo isosceles
+    function AlturaTrianguloIso(lado1,lado2,base){
+        if(lado1!=lado2){
+            alert("No es isosceles");
+            return "Ingresa valores validos";
+        }
+        else{
+        return Math.sqrt((lado1*lado2)-(base*base)/4);
+    }}
     //Aqui interactuamos con el HTML en el cuadrado
     function calcularPerimetroCuadrado(){
         const input= document.getElementById("InputCuadrado");
@@ -106,4 +115,17 @@ console.group("Triangulos");
 
         const area=areaCirculo(value);
         alert("El area es de "+area);
+    }
+    function calcularAlturaTrianguloIso(){
+        const input1=document.getElementById("InputLado1");
+        const value1=input1.value;
+
+        const input2=document.getElementById("InputLado2");
+        const value2=input2.value;
+
+        const input3=document.getElementById("InputBaseIso");
+        const value3=input3.value;
+
+        const altura=AlturaTrianguloIso(value1,value2,value3);
+        alert("La altura es de "+altura);
     }
