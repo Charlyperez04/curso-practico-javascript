@@ -5,14 +5,21 @@ function calcularMediaAritmetica(lista){
         }
     );
     const promedioLista=sumaLista/lista.length;
-    return promedioLista;
+    const result=document.getElementById("result");
+    result.innerText="El promedio es de "+ promedioLista;
     }
-const lista1=[
-    300,200,133,345,689
-];
-lista1.sort(function(a, b) {
-    return a - b;
-  });
+function conversion(){
+        const si1=document.getElementById("input");
+        const value= si1.value.split(',');
+        const nuevo = value.map((i) => Number(i));
+        nuevo.sort(function(a, b){return a - b});
+        console.log(nuevo);
+        if (esPar(nuevo)){
+            console.log("si")
+        }else{
+            console.log("no")
+        }
+    }
 
 const mitadLista1=parseInt(lista1.length/2);
 
@@ -35,4 +42,8 @@ if (esPar(lista1.length)){
     mediana=promedioElemento1y2;
 } else{
  mediana=lista1[mitadLista1];
+}
+function interaccionHTML(){
+    conversion();
+
 }

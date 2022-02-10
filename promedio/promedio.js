@@ -1,13 +1,19 @@
 function calcularMediaAritmetica(lista){
-// let sumaLista=0;
-// for(let i=0;i<lista.length;i++){
-//     sumaLista=sumaLista+lista[i];
-// }
 const sumaLista= lista.reduce(
     function (valorAcumulado=0, nuevoElemento){
         return valorAcumulado+nuevoElemento;
     }
 );
 const promedioLista=sumaLista/lista.length;
-return promedioLista;
+console.log(promedioLista);
+const result=document.getElementById("result");
+result.innerText="El promedio es de "+ promedioLista;
+}
+
+function interaccionHTML(x){
+    const si1=document.getElementById("input");
+    const value= si1.value.split(',');
+    const nuevo = value.map((i) => Number(i));
+    console.log(nuevo);
+    calcularMediaAritmetica(nuevo);
 }
