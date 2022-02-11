@@ -5,10 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salarios</title>
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
 </head>
 <body>
     <h1>Salarios</h1>
-    <script src="./salarios.js"></script>
-    <script src="./analisis.js"></script>
+    <aside>
+        <ul>
+            <p>La lista de valores precargados es la siguiente</p>
+            <li>Camila <strong>$500</strong></li>
+            <li>Nath <strong>$1500</strong></li>
+            <li>Luisa <strong>$1800</strong></li>
+            <li>Laura <strong>$1000</strong></li>
+            <li>Daniela <strong>$2200</strong></li>
+            <li>Esperancita <strong>$200</strong></li>
+            <li>Carla <strong>$500</strong></li>
+            <li>Antonieta <strong>$1500</strong></li>
+            <li>Alicia <strong>$1300</strong></li>
+            <li>Ana <strong>$2400</strong></li>
+            <li>Julia <strong>$3400</strong></li>
+            <li>Rosa <strong>$400</strong></li>
+            <li>Angelica <strong>$400</strong></li>
+            <li>Lorena <strong>$600</strong></li>
+            <li>Tatiana <strong>$400</strong></li>
+            <li>Carolina <strong>$1600</strong></li>
+            <li>Fernanda <strong>$2600</strong></li>
+            <li>Nora <strong>$1000</strong></li>
+            <li>Gisselle <strong>$2000</strong></li>
+            <li>Bill Gates <strong>$100000000</strong></li>
+        </ul>
+    </aside>
+    <section>
+        <button type="button" onclick="medianaGeneral()">Saber la mediana general</button>
+        <p id="mediana1"></p>
+    </section>
+    <section>
+        <button type="button" onclick="medianaTop10()">Saber la mediana del top 10% en salarios</button>
+        <p id="mediana2"></p>
+    </section>
+    <h2>Calculemos la capacidad de endudamiento</h2>
+    <a href="https://www.bankinter.com/banca/preguntas-frecuentes/hipotecas/que-es-la-capacidad-de-endeudamiento">¿Que es la capacidad de endeudamiento?</a>
+    <form action="">
+        <label for="inputIngresos">Inserta tus ingresos totales mensuales</label>
+        <input type="number" id="inputIngresos">
+        <label for="inputGastos">Inserta tus gastos totales mensuales</label>
+        <input type="number" id="inputGastos">
+        <button type="button" onclick="capEndeudamiento()">Conocer la capacidad de endeudamiento</button>
+    </form>
+    <p id="endeudamiento"></p>
 </body>
 </html>

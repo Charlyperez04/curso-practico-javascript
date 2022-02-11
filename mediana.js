@@ -6,7 +6,8 @@ function calcularMediaAritmetica(lista){
     );
     const promedioLista=sumaLista/lista.length;
     const result=document.getElementById("result");
-    result.innerText="El promedio es de "+ promedioLista;
+    result.innerText="La mediana es de "+ promedioLista;
+    console.log(promedioLista);
     }
 function conversion(){
         const si1=document.getElementById("input");
@@ -14,14 +15,19 @@ function conversion(){
         const nuevo = value.map((i) => Number(i));
         nuevo.sort(function(a, b){return a - b});
         console.log(nuevo);
-        if (esPar(nuevo)){
-            console.log("si")
+        if (esPar(nuevo.length)){
+            const mitadLista1=parseInt(nuevo.length/2);
+            const elemento1=nuevo[mitadLista1-1];
+            const elemento2=nuevo[mitadLista1]
+            const promedioElemento1y2=calcularMediaAritmetica([elemento1,elemento2,])
         }else{
-            console.log("no")
-        }
+            const mitadLista1=parseInt(nuevo.length/2);
+            mediana=nuevo[mitadLista1];       
+            console.log(mediana);
+            const result=document.getElementById("result");
+            result.innerText="La mediana es de "+ mediana;
+         }
     }
-
-const mitadLista1=parseInt(lista1.length/2);
 
 function esPar(numerito){
     if(numerito % 2===0){
@@ -29,21 +35,4 @@ function esPar(numerito){
     }else{
         return false;
     }
-}
-
-let mediana;
-if (esPar(lista1.length)){ 
-    const elemento1=lista1[mitadLista1-1];
-    const elemento2=lista1[mitadLista1]
-    const promedioElemento1y2=calcularMediaAritmetica([
-        elemento1,
-        elemento2,
-    ])
-    mediana=promedioElemento1y2;
-} else{
- mediana=lista1[mitadLista1];
-}
-function interaccionHTML(){
-    conversion();
-
 }
