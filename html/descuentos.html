@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <script src="../js/descuentos.js"></script>
+    <link rel="stylesheet" href="../css/descuentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Serif:wght@400;600&display=swap" rel="stylesheet">
+    <title>Porcentajes y descuentos | Curso practico de JS</title>
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Porcentajes y descuentos</h1>
+        <p class="header__text">Este es el segundo taller del curso Practico de JavaScript</p>
+    </header>
+<main>
+    <section class="containerDiscount">
+        <h2 class="containerDiscount__title">Calcula el precio a pagar de tus productos con descuento</h2>
+        <p class="containerDiscount__subtitle containerDiscount__subtitle--1">Los cupones disponibles son los siguientes</p>
+        <ul class="containerDiscount__list">
+            <li>"JuanDC_es_Batman" =15%</li>
+            <li>"pero_no_le_digas_a_nadie" =30%</li>
+            <li>"es_un_secreto" =25%</li>
+        </ul>
+        <p class="containerDiscount__subtitle containerDiscount__subtitle--2">En caso de contar exclusivamente con un cupon, insertar un 0 en el apartado de descuento</p>
+            <label class="containerDiscount__label containerDiscount__label--1" for="InputPrice">Escribe el precio de tu producto</label>
+            <input type="number" class="containerDiscount__input containerDiscount__input--1" id="InputPrice" >
+
+            <label for="InputDiscount" class="containerDiscount__label containerDiscount__label--2">Escribe el descuento de tu producto</label>
+            <input type="number" id="InputDiscount" class="containerDiscount__input containerDiscount__input--2">
+
+            <label for="InputCoupon" class="containerDiscount__label containerDiscount__label--3">Escribe el cupón de descuento de tu producto</label>
+            <input type="text" id="InputCoupon" class="containerDiscount__input containerDiscount__input--3">
+            <button type="button" onclick="onClickButtonPriceDiscount()" class="containerDiscount__button">Calcular el precio con descuento</button>
+            <p class="containerDiscount__result containerDiscount__result--2" id="TextP">Mira aqui tu resultado</p>
+            <p class="containerDiscount__result containerDiscount__result--1" id="ResultP"></p>
+    </section>
+    <div>
+        <figure><a href="../index.html"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home"></a></figure>
+    </div>
+</main>
+</body>
+</html>

@@ -60,7 +60,8 @@
         const value=input.value;
 
         const perimetro=perimetroCuadrado(value);
-        alert("El perimetro es de "+perimetro);
+        const impresion=document.getElementById("resultadoCuadradoPerimetro");
+        impresion.innerText="El perimetro es de "+perimetro;
     }
     
     function calcularAreaCuadrado(){
@@ -68,7 +69,8 @@
         const value=input.value;
 
         const area=areaCuadrado(value);
-        alert("El area es de "+area);
+        const impresion=document.getElementById("resultadoCuadradoArea");
+        impresion.innerText="El area es de "+area;
     }
     //Aca interactuamos con el HTML en el triangulo
     function calcularPerimetroTriangulo(){
@@ -82,7 +84,8 @@
         const value3=Number(input3.value);
 
         const perimetro=perimetroTriangulo(value1,value2, value3);
-        alert ("El perimetro es de "+perimetro);
+        const impresion=document.getElementById("resultadoTrianguloPerimetro");
+        impresion.innerText="El perimetro es de "+perimetro;    
     }
     function calcularAreaTriangulo(){
         const input1=document.getElementById("InputTriangulo3");
@@ -92,29 +95,33 @@
         const value2=input2.value;
 
         const area=areaTriangulo(value1,value2);
-        alert("El area es de "+area);
-    }
+        const impresion=document.getElementById("resultadoTrianguloArea");
+        impresion.innerText="El area es de "+area;
+        }
     //Interaccion con el HTML en el circulo
     function calcularDiametroCirculo(){
         const input=document.getElementById("InputCirculo");
         const value=input.value;
 
         const diametro=diametroCirculo(value);
-        alert("El diametro es de "+diametro);
-    }
+        const impresion=document.getElementById("resultadoCirculoDiametro");
+        impresion.innerText="El diametro es de "+diametro;
+        }
     function calcularCircunferenciaCirculo(){
         const input=document.getElementById("InputCirculo");
         const value=input.value;
 
         const circunferencia=perimetroCirculo(value);
-        alert("La circunferencia es de "+circunferencia);
+        const impresion=document.getElementById("resultadoCirculoCircunferencia");
+        impresion.innerText="La circunferencia es de "+circunferencia;
     }
     function calcularAreaCirculo(){
         const input=document.getElementById("InputCirculo");
         const value=input.value;
 
         const area=areaCirculo(value);
-        alert("El area es de "+area);
+        const impresion=document.getElementById("resultadoCirculoArea");
+        impresion.innerText="El area es de "+area;
     }
     function calcularAlturaTrianguloIso(){
         const input1=document.getElementById("InputLado1");
@@ -127,5 +134,6 @@
         const value3=input3.value;
 
         const altura=AlturaTrianguloIso(value1,value2,value3);
-        alert("La altura es de "+altura);
+        const impresion=document.getElementById("resultadoTrianguloIso");
+        impresion.innerText="La altura es de "+altura;
     }

@@ -1,0 +1,13 @@
+html{
+    font-size: 75%;
+}
+main{
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    height: auto;
+    min-height: 90vh;
+}
+footer{
+    justify-content: center;
+}

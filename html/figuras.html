@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas | Curso Practico de JS en Platzi</title>
+    <script src="../js/figuras.js"></script>
+    <link rel="stylesheet" href="../css/figuras.css">
+    <link rel="stylesheet" href="../css/figurasDesktop.css" media="(min-width:700px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Serif:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="header__title">
+            Figuras geometricas
+        </h1>
+        <p class="header__text">Este es el primer taller del curso practico de JavaScript</p>
+    </header>
+    <main>
+    <section class="containerCuadrado">
+        <h2 class="containerCuadrado__title">Calcula el area y perimetro de un cuadrado</h2>
+            <label for="InputCuadrado" class="containerCuadrado__label">
+                Escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number" class="containerCuadrado__input">
+            <p class="containerCuadrado__result1" id="resultadoCuadradoPerimetro">Mira aqui el resultado del perimetro</p>
+            <p class="containerCuadrado__result2" id="resultadoCuadradoArea">Mira aqui el resultado del area</p>
+            <button class="containerCuadrado__button1" type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perimetro
+            </button>
+            <button class="containerCuadrado__button2" type="button" onclick="calcularAreaCuadrado()">
+                Calcular el area
+            </button>
+    </section>
+
+    <section class="containerTriangulo">
+        <h2 class="containerTriangulo__title">Calcula el area y perimetro de un triangulo</h2>
+            <label for="InputTriangulo1" class="containerTriangulo__label containerTriangulo__label--1">
+                Escribe cuanto mide el primer lado de tu triangulo
+            </label>
+            <input id="InputTriangulo1" type="number" class="containerTriangulo__input containerTriangulo__input--1">
+            <label for="InputTriangulo2" class="containerTriangulo__label containerTriangulo__label--2">
+                Escribe cuanto mide el segundo lado de tu triangulo
+            </label>
+            <input id="InputTriangulo2" type="number" class="containerTriangulo__input containerTriangulo__input--2">
+            <label for="InputTriangulo3" class="containerTriangulo__label containerTriangulo__label--3">
+                Escribe cuanto mide la base de tu triangulo
+            </label>
+            <input id="InputTriangulo3" type="number" class="containerTriangulo__input containerTriangulo__input--3">
+            <label for="InputTriangulo4" class="containerTriangulo__label containerTriangulo__label--4">
+                Escribe cual es la altura de tu triangulo
+            </label>
+            <input id="InputTriangulo4" type="number" class="containerTriangulo__input containerTriangulo__input--4">
+            <button type="button" onclick="calcularPerimetroTriangulo()" class="containerTriangulo__button containerTriangulo__button--1">
+            Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()" class="containerTriangulo__button containerTriangulo__button--2">
+            Calcular el area
+            </button>
+        </form>
+        <p class="containerTriangulo__result containerTriangulo__result--1" id="resultadoTrianguloPerimetro">Mira aqui el resultado del perimetro</p>
+        <p class="containerTriangulo__result containerTriangulo__result--2" id="resultadoTrianguloArea">Mira aqui el resultado del área</p>
+    </section>
+    <section class="containerCirculo">
+       <h2 class="containerCirculo__title">Calculando el diametro, circunferencia y area de un circulo</h2>
+            <label for="inputCirculo" class="containerCirculo__label">
+                Escribe cuanto mide el radio de tu circulo
+            </label>
+            <input id="InputCirculo" type="number" class="containerCirculo__input">
+            <button type="button" onclick="calcularDiametroCirculo()" class="containerCirculo__button containerCirculo__button--1">
+            Calcular diametro
+            </button>
+            <button type="button" onclick="calcularCircunferenciaCirculo()" class="containerCirculo__button containerCirculo__button--2">
+            Calcular la circunferencia
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()" class="containerCirculo__button containerCirculo__button--3">
+                Calcular el area
+            </button>
+        <p class="containerCirculo__result containerCirculo__result--1" id="resultadoCirculoDiametro">Mira aqui el resultado del diametro</p>
+        <p class="containerCirculo__result containerCirculo__result--2" id="resultadoCirculoCircunferencia">Mira aqui el resultado de la circunferencia</p>
+        <p class="containerCirculo__result containerCirculo__result--3" id="resultadoCirculoArea">Mira aqui el resultado del área</p>
+    </section>
+    <section class="containerTrianguloIso">
+        <h2 class="containerTrianguloIso__title">Calculando la altura de un triangulo isosceles</h2>
+        <p class="containerTrianguloIso__subtitle">Recuerda que el triangulo de este tipo tiene sus 2 lados iguales</p>
+            <label for="InputLado1" class="containerTrianguloIso__label containerTrianguloIso__label--1">
+                Escribe cuanto mide el primer lado de tu triangulo isosceles
+            </label>
+            <input id="InputLado1" type="number" class="containerTrianguloIso__input containerTrianguloIso__input--1">
+            <label for="InputLado2" class="containerTrianguloIso__label containerTrianguloIso__label--2">
+                Escribe cuanto mide el otro lado de tu triangulo isosceles
+            </label>
+            <input type="text" id="InputLado2" class="containerTrianguloIso__input containerTrianguloIso__input--2">
+            <label for="InputBaseIso" class="containerTrianguloIso__label containerTrianguloIso__label--3">
+                Escribe cuanto mide la base de tu triangulo isosceles
+            </label>
+            <input type="text" id="InputBaseIso" class="containerTrianguloIso__input containerTrianguloIso__input--3">
+            <button type="button" onclick="calcularAlturaTrianguloIso()" class="containerTrianguloIso__button">
+            Calcular la altura
+            </button>
+        <p class="containerTrianguloIso__result" id="resultadoTrianguloIso">Mira aqui el resultado de la altura</p>
+    </section>
+</main>
+<footer>
+    <figure><a href="../index.html"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home"></a></figure>
+</footer>
+</body>
+</html>

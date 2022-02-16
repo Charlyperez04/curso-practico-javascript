@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --black-js:#0D0D0D;
+    --main-yellow:#F7E018;
+    --yellow-footer:#8C770D;
+    --secondary-yellow:#BFA211;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--black-js);
+    text-align: center;
+    padding-bottom: 5px;
+}
+header h1,p{
+    color: white;
+    font-family: Poppins;
+}
+header h1{
+    font-size: 3rem;
+}
+header p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(7, 1fr);
+    background-color: var(--main-yellow);
+}
+.Taller{
+    width: 100%;
+    text-align: center;
+    border: solid 5px var(--black-js);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px 0;
+}
+.Taller figure img:hover{
+    transform: scale(1.22);
+    transition: transform 1s;
+    border: none;
+}
+.Taller a{
+    text-decoration: none;
+    font-size: 2.8rem;
+    font-family: Roboto Serif;
+    font-weight: 600;
+    color: black;
+}
+.Taller a:visited{
+    color: black;
+}
+.Taller img{
+    height: 10rem;
+}
+.Taller__5 figure img{
+    height: 11rem;
+}
+.Proximamente{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+footer{
+    display: grid;
+    width: 100%;
+    padding: 20px 0;
+    grid-template-areas: 
+    "text"
+    "icons";
+    background-color:darkgoldenrod;
+    border: solid 2px black;
+}
+footer .footer__text{
+    grid-area: text;
+    text-align: center;
+}
+.footer__text p{
+    font-size: 2.5rem;
+    color: var(--black-js);
+}
+footer .footer__icons{
+    grid-area: icons;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+footer .footer__icons img:hover{
+    transform: scale(1.3);
+    transition: transform 1s;
+    border: none;
+}
+footer .footer__icons figure img{
+    width: 4rem;
+}
